@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_01_171645) do
+ActiveRecord::Schema.define(version: 2022_10_07_220336) do
 
   create_table "breeds", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2022_06_01_171645) do
     t.integer "group_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "likes"
   end
 
   create_table "groups", force: :cascade do |t|

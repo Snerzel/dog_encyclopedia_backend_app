@@ -19,6 +19,6 @@ class Api::V1::BreedsController < ApplicationController
     private
 
     def breed_params
-        params.require(:breed).permit(:name, :image_url, :info, :group_id)
+        params.require(:breed).permit(:name, :image_url, :info, :likes, :group_id)
     end
 end

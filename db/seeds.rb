@@ -17,4 +17,4 @@ toy = Group.create(name: 'toy')
 non_sporting = Group.create(name: 'Non-Sporting')
 herding = Group.create(name: 'Herding')
 
-Breed.create(name: "Shiba Inu", image_url: "https://www.bil-jac.com/media/kkobwqpy/shiba-inu-1047146596.jpg?anchor=center&mode=crop&width=600&height=400&rnd=132167292121870000.jpg", info: "This breed is extremely agile and resembles a fox. These dogs have great endurance. Generally a neat and clean dog, most Shiba-Inus have white markings on face and chest, as well as a curly tail.", group_id: non_sporting.id )
+Breed.create(name: "Shiba Inu", image_url: "https://www.bil-jac.com/media/kkobwqpy/shiba-inu-1047146596.jpg?anchor=center&mode=crop&width=600&height=400&rnd=132167292121870000.jpg", info: "This breed is extremely agile and resembles a fox. These dogs have great endurance. Generally a neat and clean dog, most Shiba-Inus have white markings on face and chest, as well as a curly tail.", likes: 17, group_id: non_sporting.id)
