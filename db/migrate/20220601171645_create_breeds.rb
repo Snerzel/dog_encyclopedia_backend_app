@@ -6,7 +6,7 @@ class CreateBreeds < ActiveRecord::Migration[6.1]
       t.string :image_url
       t.integer :group_id
       
-      t.references :group
+      
 
       t.timestamps
     end

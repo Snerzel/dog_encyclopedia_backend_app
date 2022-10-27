@@ -8,13 +8,24 @@ class Api::V1::BreedsController < ApplicationController
 
     def create
         breed = Breed.new(breed_params)
-        if breed.save!
-            render json: breed, status: :accepted
+        if breed.save
+            render json: BreedSerializer.new(breed), status: :accepted
         else
             render json: {errors: breed.errors.full_messages}, status: :unprocessible_entity
         end
     end
 
+    def update
+       breed = Breed.find(params[:id])
+       breed.update(breed_params)
+        render json: BreedSerializer.new(breed)
+    end
+
+
+    def destroy
+        breed = Breed.find(params[:id])
+        breed.destroy
+    end
 
     private
 
